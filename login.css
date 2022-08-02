@@ -71,3 +71,8 @@ a:hover {
     margin-top: 10px;
     border-radius: 10px;
 }
+
+.checkbox {
+    display: flex;
+    margin-right: 10px;
+}
