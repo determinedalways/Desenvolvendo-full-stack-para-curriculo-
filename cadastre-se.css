@@ -20,6 +20,13 @@ body {
     overflow: hidden;
 }
 
+@media only screen and (max-width: 1000px) { 
+    .menu-principal { 
+        width: 20%;
+    }
+    
+}
+
 a:link {
     text-decoration: none;
     color: white;
