@@ -10,7 +10,7 @@ body {
 }
 
 .menu-principal {
-    background-color: rgb(251, 21, 21);
+    background-color: #72b1a4;;
     display: flex;
     flex-direction: column-reverse;
     height: 30vh;
@@ -64,29 +64,31 @@ a:hover {
 }
 
 .email {
-    width: 30%;
+    width: 20%;
     padding: 5px;
     text-align: center;
-    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+    border: 3px solid black;
 }
 .password {
-    width: 30%;
+    width: 20%;
     padding: 5px;
+    margin-top: 15px;
     margin-right: 15fpx;
     text-align: center;
-    border: 4px solid black
+    border: 3px solid black
     
 }
 
 .enter {
-    width: 15%;
+    width: 5%;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 15px;
     border-radius: 10px;
 }
 
 .checkbox {
     display: flex;
     margin-right: 10px;
+  
 }
