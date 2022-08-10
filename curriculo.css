@@ -8,6 +8,8 @@ body {
     background-color: #319190;
     overflow-x: hidden;
 }
+
+
     
 
 .menu-principal {
@@ -19,6 +21,7 @@ body {
     padding: 20px;
     justify-content: space-between;
     overflow: hidden;
+
 }
 
 @media only screen and (max-width: 1000px) { 
@@ -144,6 +147,11 @@ margin-right: 200px;
     flex-wrap: wrap;
     flex-direction: row
     
+}
+
+.git {
+    width: 10%;
+    margin-right: 50px;
 }
 
 .ejs {
