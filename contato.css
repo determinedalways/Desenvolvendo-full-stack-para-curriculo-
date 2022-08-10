@@ -7,6 +7,9 @@
 body {
     width: 100%;
     height: 100vh;
+} 
+.menu {
+    width: 100%;
 }
 
 .menu-principal {
@@ -25,6 +28,12 @@ body {
         width: 20%;
     }
     
+}
+
+.text {
+    height: 10vh;
+    width: 20%;
+    text-align: center;
 }
 
 a:link {
@@ -58,12 +67,12 @@ a:hover {
     color: rgb(82, 82, 181) ;
 }
 
-.login {
+.contato {
     display: flex;
     text-align: center;
     padding-bottom: 10px;
 }
-.container-login {
+.container-contato {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,11 +96,12 @@ a:hover {
 }
 
 .enter {
-    width: 5%;
+    width: 20%;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 15px;
     border-radius: 10px;
+
 }
 
 .checkbox {

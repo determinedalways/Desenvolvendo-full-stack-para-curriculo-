@@ -31,8 +31,8 @@ a:link {
 .menu {
     color: white;
     font-weight: bold;
-    width: 10%;
-    text-decoration: none
+    width: 100%;
+    text-decoration: none;
 }
 
 a:hover {
