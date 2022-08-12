@@ -6,5 +6,5 @@ const user = [{"nome completo": "Manuel Sobrinho",
 }]
 
 const userController = { login: (req,res) => {
-    return res.render ("login",{title: "login"},)
+    return res.json ("login",{title: "login"},)
 }  }
