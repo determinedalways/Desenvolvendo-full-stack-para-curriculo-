@@ -23,7 +23,7 @@ const userController = { index: (req,res) => {
     store: (req,res)=> {
         const {email} = req.body
         email.push({id:users.length + 1,email})
-        res.status(201).json(message:"Usuário criado com sucesso")
+        res.status(201).json({message:"Usuário criado com sucesso"})
     }
 }
 
