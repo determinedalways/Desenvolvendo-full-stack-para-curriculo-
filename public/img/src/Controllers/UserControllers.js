@@ -22,3 +22,5 @@ const userController = { index: (req,res) => {
         }
     }
 }
+
+module.exports = userController
