@@ -1,0 +1,28 @@
+{
+    "data":[
+        {
+            "id": 1,
+            "email": "juninho_zimba-net@hotmail.com"
+        },
+        {
+            "id": 2,
+            "email": "anaclara@hotmail.com"
+        },
+        {
+            "id": 3,
+            "email": "jobson@hotmail.com"
+        },
+        {
+            "id": 4,
+            "email": "ronaldo@hotmail.com"
+        },
+        {
+            "id": 5,
+            "email": "geremias@hotmail.com"
+        },
+        {
+            "id": 6,
+            "email":  "ananias@hotmail.com"
+        }
+    ]
+}

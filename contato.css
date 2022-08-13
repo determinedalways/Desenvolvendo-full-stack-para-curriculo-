@@ -31,9 +31,12 @@ body {
 }
 
 .text {
-    height: 10vh;
+    height: 5vh;
     width: 20%;
     text-align: center;
+    margin-top: 10px;
+    border: solid black 3px;
+   
 }
 
 a:link {

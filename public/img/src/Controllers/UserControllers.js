@@ -1,25 +1,29 @@
-const user = [{"nome completo": "Manuel Sobrinho",
-             "usuário": "juninho",
-             "e-mail": "juninho_zimba-net@hotmail.com",
-             "senha": "123456"
-             
-}]
+const email = require('../data/email.json')
+const userRouter = require('../router/userRoute')
+
+email = email.data
+
 
 const userController = { index: (req,res) => {
-    res.send(user)
+    res.status(200).json({data:email,message:"realizada com sucesso"})
 }  ,
  show: (req, res)=> {
         const { id } = req.params
         let valor
         for (let i = 0; i < user.length; i++) {
-            if (user[i].id === parseInt(id)) {
+            if (email[i].id === parseInt(id)) {
                 valor = user[i].id
-                return valor
+                return res.status(200).send(valor)
             } else {
-                return res.send('não foi dessa vez')
+                return res.status(404).send('não foi dessa vez')
             }
 
         }
+    },
+    store: (req,res)=> {
+        const {email} = req.body
+        email.push({id:users.length + 1,email})
+        res.status(201).json(message:"Usuário criado com sucesso")
     }
 }
 
