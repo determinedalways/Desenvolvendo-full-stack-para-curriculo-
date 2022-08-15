@@ -9,7 +9,7 @@
   },
   "name": "desenvolvendo-full-stack-para-curriculo-",
   "version": "1.0.0",
-  "main": "main.js",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"
   },
