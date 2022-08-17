@@ -43,6 +43,8 @@ const userController = {
     },
 
     delete: (req,res) => {
+        const {id} = req.params;
+        const result = emails.findIndex(email)
 
     }
 }
