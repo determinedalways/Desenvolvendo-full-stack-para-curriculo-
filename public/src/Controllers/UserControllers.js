@@ -5,7 +5,7 @@ const emails = json.data
 
 const userController = {
     index: (req, res) => {
-        res.status(200).json({ data: email, message: "realizada com sucesso" })
+        res.status(200).json({ data: emails, message: "realizada com sucesso" })
     },
     show: (req, res) => {
         const { id } = req.params
