@@ -54,6 +54,24 @@
     <div class="natureza">
         <img class = "natureza"src="/img/natureza.jpg" alt="">
     </div>
+<script>
+    var m = document.getElementById('minha-vida')
+    m.addEventListener('mouseenter',mouse)
+    m.addEventListener('click',clicou)
+    m.addEventListener('mouseout',saiu)
+    function mouse() {
+        m.style.color = 'red'
+        m.innerText = 'clique aqui'
+    }
 
+    function clicou() {
+        m.innerText = 'Sou Manuel Sobrinho, obrigado pela atenção'
+    }
+
+    function saiu() {
+        m.style.color = 'black'
+        m.innerText = 'Minha vida'
+    }
+</script>
 </body>
 </html>
