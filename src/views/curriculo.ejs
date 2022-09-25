@@ -18,7 +18,7 @@
            Contato </a>
         </div>
         <hr>
-        <div class="menu"><a href="/curriculo">
+        <div class="menu" ><a href="/curriculo">
            Curriculo </a>
         </div>
         <hr>
@@ -27,7 +27,7 @@
         <hr>
        </header>
        <aside class = "titulo">
-        <div class="titulo-1" >
+        <div class="titulo-1" id = 'texto1' >
             Meu currículo
         </div>
     </aside> 
@@ -45,7 +45,7 @@
             <div class="mvc">
                 <img src="./img/mvc.png" alt="">
             </div>
-            <li class="listas1">CRUD</li><img src="./img/crud.png" alt="">
+            <li class="listas1" >CRUD</li><img src="./img/crud.png" alt="">
             <li class="listas1">GIT</li> <img class= "git" src="./img/git.png" alt=""></div>
            <div class="listas2"><li class="listas2">EJS</li> <div class="ejs"><img src="./img/ejs.png" alt=""></div> 
             <li class="listas2">RESPONSIVIDADE</li> <img src="./img/responsividade.png" alt="">
@@ -55,5 +55,23 @@
 
         </div>
     </main>
+
+    <script>
+        let m = document.getElementById('texto1')
+        let agora = new Date()
+        let hora = agora.getHours()
+        m.addEventListener('mouseenter',enter)
+        m.addEventListener('mouseout',out)
+        function enter() { 
+        if (hora > 12) {
+             m.innerText = ` Boa tarde, agora são ${hora} horas `
+        } else {
+            return m.innerText = 'Bom dia'
+        } }
+    function out() {
+        m.innerText = 'Meu currículo'
+    }
+    </script>
+
 </body>
 </html>
