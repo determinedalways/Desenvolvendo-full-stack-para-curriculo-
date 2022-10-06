@@ -1,4 +1,3 @@
-DROP DATABASE IF EXISTS projetinho;
 
 -- Cria banco de dados
 CREATE DATABASE IF NOT EXISTS projetinho;
@@ -14,8 +13,9 @@ CREATE TABLE users (
 );
 
 INSERT INTO users ( email, senha)
-VALUES ("juninho_zimba-net@hotmail.com", md10(123456))
-    
+VALUES ("juninho_zimba-net@hotmail.com", 123456);
+  
+SELECT * FROM users;
     
 
 
