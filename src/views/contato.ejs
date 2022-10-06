@@ -32,19 +32,52 @@
 <main>
     <div class="container-contato">
         <h2 class = contato> Contato</h2>
+        <form class = 'formulario'action=""></form>
         <input class = "email" type="email" name="email" placeholder="Digite aqui seu e-mail" required>
+        <small>Digite novamente, por favor!</small>
         <input type="text" class="text" placeholder="Digite seu contato">
         <input type="submit" class = "enter" name = "botao-contato"> 
         <div class="checkbox">
         <input type="radio" class="checkbox"> Esqueceu a senha</div>
        <p class="paragrafo"> Ainda não tem uma conta?</p> <a href="cadastre-se.html">Cadastre-se!</a> 
-       </div>
+       </div> <form action=""></form>
     </main>
     <script>
-        let b = document.getElementsByClassName = 'enter'
-        b.addEventListener('click',alerta)
-        function alerta() { 
-        alert('Dados enviado com sucesso')  }
+        const form = document.getElementsByClassName = 'formulario'
+        const email = document.getElementsByClassName = 'email'
+        const text = document.getElementsByClassName = 'text'
+        const submit = document.getElementsByClassName = 'enter';
+
+        // form.addEventListener("submit", (e) => {
+        //     e.preventDefault
+        //     checkInputs();
+
+        // })
+
+        email.addEventListener('input',(e) => {
+            checkInputs
+        })
+
+        function checkInputs(username) {
+            const userEmailValue = email.value
+            const textValue = text.value
+            const submitValue = submit.value
+
+            if (userEmailValue === ' ') {
+             alert('Digite algum texto')
+
+            }
+        }
+
+        function setErrorFor(input,message) {
+        }
+
+        function setErrorForSucess(input) {
+            const formControl = input.parentElement
+            const small = formControl.querySelector('email')
+            small.innerText = message
+        }
+
     </script>
 </body>
 </html>
