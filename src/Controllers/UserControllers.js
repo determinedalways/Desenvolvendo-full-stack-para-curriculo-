@@ -1,6 +1,6 @@
-const json = require('../data/email.json')
 const userRouter = require('../router/userRoute')
-const emails = json.data
+const emails = require('../../models/Person')
+const Sequelize = require ('sequelize')
 
 
 const userController = {
@@ -8,15 +8,17 @@ const userController = {
         res.render("portifolio")
     },
     show: (req, res) => {
+         
         const { id } = req.params
-        let valor
+        let valor = ""
         for (let i = 0; i < emails.length; i++) {
             if (emails[i].id === parseInt(id)) {
                 valor = emails[i]
-                return res.json(valor)
-            } else {
+                return res.send(valor) }
+
+              else {
                 return res.sendStatus(404).send('não foi dessa vez')
-            }
+            }  
 
         }
     },
