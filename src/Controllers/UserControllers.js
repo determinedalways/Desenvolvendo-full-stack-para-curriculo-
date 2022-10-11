@@ -1,6 +1,8 @@
 const userRouter = require('../router/userRoute')
+const db = require('../config/sequelize')
 const emails = require('../../models/Person')
 const Sequelize = require ('sequelize')
+const {Op} = require ('sequelize')
 
 
 const userController = {
